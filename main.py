@@ -1,4 +1,3 @@
-import os
 
 # List 1: Pertanyaan Pilihan Ganda (Tema Geografi Mudah)
 pertanyaan = [
@@ -16,8 +15,8 @@ pertanyaan = [
 
 # List 2: Jawaban Pilihan Ganda (1 benar, 3 pengecoh)
 pilgan = [
-    ["A. Gunung Merapi", "B. Gunung Rinjani", "C. Gunung Kerinci", "D. Gunung Jaya Wijaya"],  # D
-    ["A. Jawa", "B. Kalimantan", "C. Sumatera", "D. Sulawesi"],                               # B
+    ["A. Gunung Merapi", "B. Gunung Rinjani", "C. Gunung Kerinci", "D. Gunung Jaya Wijaya"],   # D
+    ["A. Jawa", "B. Kalimantan", "C. Sumatera", "D. Sulawesi"],                                # B
     ["A. Afrika", "B. Amerika", "C. Asia", "D. Eropa"],                                        # C
     ["A. Bangkok", "B. Kuala Lumpur", "C. Manila", "D. Hanoi"],                                # B
     ["A. Laut Jawa", "B. Selat Malaka", "C. Selat Sunda", "D. Laut Banda"],                    # C
@@ -31,6 +30,8 @@ pilgan = [
 kunci = ["D", "B", "C", "B", "C", "A", "B", "B", "B", "A"]  # Kunci jawaban
 
 score = 0 # Inisialisasi skor
+# salah
+# nilai
 
 for x in range(10):
     print("=======================================")
@@ -46,17 +47,11 @@ for x in range(10):
         print("Jawabanmu benar")
         score += 1
         input("klik enter untuk melanjutkan")
-        os.system('cls')
     else:
         print("Jawabanmu salah")
         input("klik enter untuk melanjutkan")
-        os.system('cls')
         # jawaban yang benar apa
     
 input("klik enter untuk melihat hasil!")
-os.system('cls')
 
-print(f"benar = {score}")
-print(f"salah = {10 - score}")
-print(f"total score = {score*10}")
-print("Terima kasih telah bermain!")
+# cek nilai
